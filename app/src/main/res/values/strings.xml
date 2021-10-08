@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Github Clone</string>
+    <string name="home">Home</string>
+    <string name="my_work">My Work</string>
+    <string name="issues">Issues</string>
+    <string name="pull_request">Pull Request</string>
+    <string name="discussions">Discussions</string>
+    <string name="repositories">Repositories</string>
+    <string name="organization">Organization</string>
+    <string name="favourites">Favourites</string>
+    <string name="favourites_child">
+        Add favourite repositories for quick access at any time, without having to search
+    </string>
+    <string name="add_favorite">Add Favorite</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="linear_layout">Linear Layout</string>
+</resources>

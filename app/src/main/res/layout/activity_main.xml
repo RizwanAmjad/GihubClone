@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout">
+
+    <Button
+        android:id="@+id/relative_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/relative_layout"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_horizontal" />
+
+    <Button
+        android:id="@+id/constraint_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_layout"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relative_button" />
+
+    <Button
+        android:id="@+id/linear_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_layout"
+        app:layout_constraintBottom_toTopOf="@+id/relative_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_horizontal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="190dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="518dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

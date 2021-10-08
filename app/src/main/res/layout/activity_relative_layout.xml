@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_margin="10dp"
+        android:text="@string/home"/>a
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/add"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/search"
+        android:layout_toStartOf="@id/add_image"/>
+
+    <TextView
+        android:id="@+id/my_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_image"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/my_work"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/three_dots"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/home_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/three_dots" />
+
+
+    <ImageView
+        android:id="@+id/issues_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/my_work"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/issues" />
+
+
+    <TextView
+        android:id="@+id/issues_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_work"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/issues_image"
+        android:text="@string/issues"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/pull_request_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/issues_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/pull_request" />
+
+    <TextView
+        android:id="@+id/pull_request_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/issues_text"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/pull_request_image"
+        android:text="@string/pull_request"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/discussions_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/pull_request_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/discussions" />
+
+
+    <TextView
+        android:id="@+id/discussions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pull_request_text"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/discussions_image"
+        android:text="@string/discussions"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:id="@+id/repositories_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/discussions_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/repositories" />
+
+
+    <TextView
+        android:id="@+id/repositories_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discussions_text"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/repositories_image"
+        android:text="@string/repositories"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/organization_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/repositories_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/organization" />
+
+
+    <TextView
+        android:id="@+id/organization_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repositories_text"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/repositories_image"
+        android:text="@string/organization"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/favourites_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/organization_text"
+        android:layout_margin="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/favourites"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/favourites_child_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favourites_text"
+        android:layout_marginHorizontal="25dp"
+        android:textAlignment="center"
+        android:text="@string/favourites_child"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favourites_child_text"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/grey"
+        android:text="@string/add_favorite"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>
